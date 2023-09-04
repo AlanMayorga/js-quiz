@@ -35,8 +35,6 @@ export const useStore = create<State>()(persist((set, get) => ({
         question.userSelectedAnswer = answerId
         question.isCorrectUserAnswer = question.correctAnswer === answerId
 
-        console.log(question)
-
         set({ questions: newQuestions })
     },
 
